@@ -11,7 +11,7 @@ export default function Collapse({ titre, children }) {
   return (
     <div className="collapse">
       <div className="collapse_title_container">
-        <h2 className="collapse_title">{titre}</h2>
+        <span className="collapse_title">{titre}</span>
         <button
           className={`collapse_button ${open ? "rotate" : ""}`}
           onClick={toggle}
