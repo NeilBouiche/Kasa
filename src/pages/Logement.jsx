@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import data from "../datas/logements.json";
 import Carousel from "../components/Carousel";
 import Collapse from "../components/Collapse";
@@ -8,7 +8,9 @@ import Info from "../components/Info";
 function Logement() {
   const params = useParams();
   const logement = data.find((item) => item.id === params.id);
-  console.log(logement);
+  if (!logement) {
+    return <Navigate to="/404" />;
+  }
   const slides = logement.pictures;
   return (
     <div>
