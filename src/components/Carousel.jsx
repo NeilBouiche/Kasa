@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import Nav from "../assets/nav.png";
 
-const ImageSlider = ({ slides }) => {
+const Carousel = ({ slides }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const goToPreviousSlide = () => {
@@ -47,4 +47,4 @@ const ImageSlider = ({ slides }) => {
   );
 };
 
-export default ImageSlider;
+export default Carousel;
