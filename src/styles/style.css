@@ -500,7 +500,7 @@ a {
   }
 
   .counter {
-    font-size: 1.8rem;
+    display: none;
   }
 
   .slider-img {

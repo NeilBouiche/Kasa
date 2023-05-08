@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function Gallery({ data }) {
   return (
     <div className="gallery_container">
-      {data.slice(0, 6).map((data, key) => {
+      {data.map((data, key) => {
         return (
           <Link key={key} to={`/logement/${data.id}`}>
             <div className="card_container">
